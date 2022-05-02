@@ -1,0 +1,41 @@
+<div style="text-align: center; display: flex; justify-content: center;">
+<nav class="navbar navbar-light bg-light">
+    <form class="form-inline">
+
+         <a routerLink="/visualisation">
+            <button class="btn btn-outline-success" type="button">
+                DELAY-CALIBRATION
+            </button>
+        </a> 
+        <a routerLink="/delay-calibration">
+            <button class="btn btn-outline-success" type="button">
+                SCANNING
+            </button>
+        </a>
+        <!-- <a routerLink="/algorithm">
+            <button class="btn btn-outline-success" type="button">
+                ALGORITHM
+            </button>
+        </a> -->
+        <a routerLink="/get-image">
+            <button  class="btn btn-outline-success" type="button">
+               LOAD-DATA
+            </button>
+        </a>
+        
+        
+        <a routerLink="/parameters">
+            <button class="btn btn-outline-success" type="button">
+                PARAMETER
+            </button>
+        </a>
+        <!-- <a routerLink="/file-upload">
+            <button class="btn btn-outline-success" type="button">
+                UPLOAD
+            </button>
+        </a> -->
+    </form>
+</nav>
+</div>
+<hr>
+<router-outlet></router-outlet>

@@ -1,0 +1,30 @@
+.fakeimg{
+    
+    background: rgb(2, 13, 29);
+     
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+    padding-top: 0.5cm;
+    padding-bottom: 0.5cm; 
+    border: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: x-large;
+    position: relative;
+   left: 2%;
+   right: 2%;
+   width: 95%;
+   
+    
+}
+.vertical-center {
+    margin: 0;
+    position: absolute;
+   right: 47%;
+   top: 18%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  

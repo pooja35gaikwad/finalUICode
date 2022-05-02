@@ -1,0 +1,118 @@
+<label class="switch">
+    <input type="checkbox" id="togBtn" (change)="function($event)"/>
+    <div class="slider round">
+
+    </div>
+</label>
+<hr>
+ <div class="split left">
+    
+      
+      <button (click)="onPress()" class="btn btn-success" style="margin-top: 5px; margin-left: 75px;">
+        No. of target & Range
+       </button>
+       
+    <input class="aaa" type="text" [(ngModel)]=name maxlength="100" size="100">            
+      <div class="fakeimg">
+          <div class="dls-menu-item" style=" margin-left: 20%;">
+</div>
+            <div id="chartContainer" style="height: 630px; border-radius: 5 mm; border-color: rgb(8, 8, 8);">
+            </div>
+        </div>
+   
+</div>
+ <div class="split right">
+    <div class="container"> 
+        <form #frm="ngForm" (ngSubmit)="saveParameters(frm.value)"> 
+            <!-- Grid row -->
+             <div class="form-group row" style="padding-top: 7px;">
+                
+               <label for="inputEmail3MD" class="col-sm-2 col-form-label" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: large; color:orange">Start Frequency</label>
+             
+              <div class="col-sm-5">
+                <div class="md-form mt-0">
+                  <input mdbInput type="number" class="form-control" id="inputEmail3MD" placeholder="Enter Start Freq. in GHz.." [(ngModel)]="startFreq" name="startFreq">
+                </div>
+              </div>
+            </div>   
+            <!-- Grid row -->
+             <!-- Grid row -->
+             <div class="form-group row" style="padding-top: 7px;"> 
+                <!-- Material input -->
+                  <label for="inputEmail3MD" class="col-sm-2 col-form-label" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: large; color:orange ">Stop Frequency</label>
+                <div class="col-sm-5">
+                  <div class="md-form mt-0">
+                 
+                    <input mdbInput type="number" class="form-control" id="inputEmail3MD" placeholder="Enter Stop Freq. in GHz.." [(ngModel)]="stopFreq" name="stopFreq">
+                  </div>
+                </div>
+              </div>  
+              
+              <!-- Grid row -->
+               <!-- Grid row -->
+             <div class="form-group row" style="padding-top: 7px;"> 
+                <!-- Material input -->
+                <label for="inputEmail3MD" class="col-sm-2 col-form-label" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: large; color:orange ">Number of Points</label>
+                <div class="col-sm-5">
+                  <div class="md-form mt-0">                   
+                    <input mdbInput type="number" class="form-control" id="inputEmail3MD" placeholder="Enter No. of points.." [(ngModel)]="numberOfpoints" name="numberOfpoints">
+                  </div>
+                </div>
+              </div> 
+
+              
+             
+              <div class="form-group row" style="padding-top: 7px;"> 
+                <!-- Material input -->
+                  <label for="inputEmail3MD" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-5">
+                  <div class="md-form mt-0">
+                    <input mdbInput type="submit" value="Set Parameter"  >
+                  </div>
+                </div>
+              </div>  
+              <!-- Grid row -->         
+           
+          </form>
+           
+
+<form #frm2="ngForm"  (ngSubmit)="onPress111(frm2.value)"> 
+    <div class="container5">
+      <label for="inputEmail3MD" class="col-sm-2 col-form-label" style="color: whitesmoke; font-weight: bold; font-family: 'Times New Roman', Times, serif;">Experiment Name</label>
+        <input type="text" (keyup)="getExperimentName()" placeholder="Enter Experiment Name" name="experimentName"  [(ngModel)]="expNAME" name="expName"
+                style="margin-top: 4px; color: green;">
+
+    <div class="form-group row" style="padding-top: 9px;"> 
+      <!-- Material input -->
+      <label for="inputEmail3MD" class="col-sm-2 col-form-label" style="color: whitesmoke; font-weight: bold; font-family: 'Times New Roman', Times, serif;">No. Of A-Scan</label>
+      <div class="col-sm-5">
+               
+          <input mdbInput type="number" class="form-control" id="inputEmail3MD" placeholder="Enter No. of a-Scans.." [(ngModel)]="fileno" name="fileno">
+      
+      </div>
+    </div> 
+  </div>
+
+  <!-- /<button (click)="successNotification()">Sucess Notification</button> -->
+
+ <div class="form-group row" >
+    <!-- Material input -->
+    
+    <div class="dls-menu-item" style=" margin-top: 25%; ">
+        <input mdbInput type="submit" value="Start Scanning" >
+     </div>
+    
+  </div>
+
+</form>
+
+
+<ng-http-loader > </ng-http-loader>
+
+<div class="dls-menu-item" style="margin-top: 2%; ">
+
+</div>
+
+<button (click)="goToParameters()"class="btn btn-success">
+  Go To Parameters
+</button>

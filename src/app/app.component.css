@@ -1,0 +1,16 @@
+.btn{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.bg {
+    /* The image used */
+    background-image: url("/assets/Cover Img.jpg");
+  
+      /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }

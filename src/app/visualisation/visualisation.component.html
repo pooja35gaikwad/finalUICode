@@ -1,0 +1,104 @@
+<div class="container">
+    <h6>
+        CALIBRATION OF SYSTEM DELAY
+    </h6>
+    <hr>
+    <div class="split left">
+        <h4>
+            Calibration Steps
+        </h4>
+        <hr>
+        <p style="font-family: 'Times New Roman', Times, serif; font-size: large; margin-left: 5px; margin-right: 5px;">
+            1) Set Frequency parameters and Numbers of sampling points.
+        <p style="font-family: 'Times New Roman', Times, serif; font-size: large; margin-left: 5px; margin-right: 5px;">
+            2) Save Free Space Data.
+
+        <p style="font-family: 'Times New Roman', Times, serif; font-size: large; margin-left: 5px; margin-right: 5px;">
+            3) Keep target in Scenario and note down the target range.
+        <p style="font-family: 'Times New Roman', Times, serif; font-size: large; margin-left: 5px; margin-right: 5px;">
+            4) Enter target distance.
+        <p style="font-family: 'Times New Roman', Times, serif; font-size: large; margin-left: 5px; margin-right: 5px;">
+            5) Save target scenario data.
+        </p>
+    </div>
+    <div class="split right">
+
+        <div class="container1">
+            <h5
+                style="font-family: 'Times New Roman', Times, serif; font-weight: bold; text-align: center;text-decoration: underline;">
+                Parameter Settings
+            </h5>
+            <div>
+                <form action="/action_page.php">
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname" style="font-size: large;">Start Freq.</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="startFreq" placeholder="Enter Start Freq. in GHz..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname" style="font-size: large;">Stop Freq.</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="stopFreq" placeholder="Enter Stop Freq. in GHz..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname" style="font-size: large;">Points</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="startFreq" placeholder="Enter No. of points..">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="row">
+
+        </div>
+        <div class="container2">
+            <input type="submit" value="Save Free Space Data">
+            <div>
+                <form action="/action_page.php">
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname" style="font-size: large;">Target Range</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="startFreq" placeholder="Enter Target Range in Meters..">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="row">
+
+            </div>
+            <div class="row">
+
+            </div>
+            <div class="row">
+
+            </div>
+            <input type="submit" value="Save Target Data">
+
+        </div>
+    </div>
+    <div class="container3">
+        <input type="submit1" value="Calculate System Delay">
+
+        <div class="row">
+            <div class="col-25" style="padding-left: 500px; font-family: 'Times New Roman', Times, serif; font-size: large; font-weight: bold;">
+                <label for="fname" style="font-size: large;">System Delay</label>
+            </div>
+            <div class="col-75" style="padding-left: 350px;font-family: 'Times New Roman', Times, serif; width: 70%;">
+                <input type="text" id="fname" name="startFreq" placeholder="Estimated system delay in ns. ">
+            </div>
+        </div>
+    </div>

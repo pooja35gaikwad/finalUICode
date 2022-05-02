@@ -1,0 +1,89 @@
+
+<nav class="navbar navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="font-family: 'Times New Roman', Times, serif; font-weight: bolder;">Tools
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"> -->
+      <!-- <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tools</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div> -->
+      <!-- <div class="offcanvas-body"> -->
+         <!-- <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">  -->
+          <li class="nav-item">
+
+
+            <a routerLink="/delay-calibration">
+              <button class="btn btn-outline-success" type="button">
+                Home
+              </button>
+            </a>
+          </li>
+          <li class="nav-item">
+
+            <button (click)="onPress()" class="btn btn-outline-success" style="margin-top: 0.5cm;">B-Scan
+              Image</button>
+          </li>
+
+          <li class="nav-item">
+            <button (click)="onPress1()" class="btn btn-outline-success" style="margin-top: 0.5cm;">Mean Subtracted
+              Image</button>
+
+          </li>
+          <li class="nav-item">
+            <button (click)="onPress2()" class="btn btn-outline-success" style="margin-top: 0.5cm;">Range-Doppler
+              Image</button>
+
+          </li>
+          <li class="nav-item">
+            <button (click)="onPress3()" class="btn btn-outline-success" style="margin-top: 0.5cm;">Target From
+              SVD</button>
+
+          </li>
+          <li class="nav-item">
+            <button (click)="onPress4()" class="btn btn-outline-success" style="margin-top: 0.5cm;">Clutter From
+              SVD</button>
+
+          </li>
+
+        <!-- </ul> -->
+        
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+            style="margin-top: 0.5cm;">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      <!-- </div> -->
+    <!-- </div> -->
+  </div>
+</nav>
+
+
+
+
+<div class="split right">
+
+
+
+  <canvas id="myCanvas"
+    style="margin-top:0%; border:3px solid #d3d3d3; background-color: rgb(65, 65, 61); top:45%; left: 50%; position: absolute; width: 1000px; height: 800px; transform: translate(-50%, -50%);">
+  </canvas>
+  <script src="script.js"></script>
+
+
+  <div id='container'>
+    <div id='container'>
+      <div id='element' style="width:980px; height:780px; margin-left: 13.8%; margin-top: 3%;"></div>
+    </div>
+
+
+  </div>
+</div>
+<div class="split left">
+  <ng-http-loader > </ng-http-loader>
+  <app-file-upload></app-file-upload>
+</div>

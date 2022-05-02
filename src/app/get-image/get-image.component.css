@@ -1,0 +1,73 @@
+.fakeimg{
+    
+    background: rgb(2, 13, 29);
+     
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+    padding-top: 0.5cm;
+    padding-bottom: 0.5cm; 
+    border: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: x-large;
+    position: relative;
+   left: 2%;
+   right: 2%;
+   width: 195%;
+   
+    
+}
+.vertical-center {
+    margin: 0;
+    position: absolute;
+   right: 60%;
+   top: 20%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+ 
+  .vertical-center1 {
+    margin: 0;
+    position: absolute;
+   right: 48%;
+   top: 20%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .vertical-center2 {
+    margin: 0;
+    position: absolute;
+   right: 37%;
+   top: 20%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+ 
+.split{
+  height: 100%;
+  width:70%;
+  position: fixed;
+z-index: 1;
+top: 0.5;
+overflow-x: hidden;
+
+}
+/* Control the left side */
+.left {
+padding-top: 0.5px;
+left:70%;
+background-color: rgb(253, 251, 251);
+width: 50%;
+}
+
+/* Control the right side */
+.right {
+padding-top: 0.5px;
+right: 30%;
+background-color: rgb(193, 231, 247);
+
+/* background-color: rgb(235, 149, 149); */ 
+}
+ 
